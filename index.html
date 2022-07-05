@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <!--EN ESTE APARTADO SE ENCONTRARÁ TODO SOBRE LOS METAS,LNKS,TITLE Y LOGO DE LA MARCA-->
+        <meta charset="utf-8">
+        <title>Oasis Protocol</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!--EN ESTA LÍNEA DE CÓDIGO ADJUNTAMOS EL LINK DE FONTAWESOME PARA LOS ICONOS DE LAS SIGUIENTES PÁGINAS-->
+        <script src="https://kit.fontawesome.com/568f2cee93.js" crossorigin="anonymous"></script>
+        <!--EN ESTA LÍNEA DE CÓDIGO ESTAMOS INSERTANDO UNA IMAGEN (PUEDE SER ICONO) EN LA PESTAÑA DEL NAVEGADOR-->
+        <link rel="icon" type="image/png" href="/img/rose_cabecera.png" />
+        <!--EN ESTA LÍNEA DE CÓDIGO ESTAMOS AGREGANDO EL AUTOR DE LA PÁGINA WEB-->
+        <meta name="author" content="Edison Gabriel Vaca Cifuentes">
+        <!--EN ESTA LÍNEA DE CÓDIGO ESTAMOS CREANDO UNA DESCRIPCIÓN  DE NUESTRA PÁGINA DONDE LOS CLIENTES PUEDAN LEER Y SABER DE  QUE TRATA NUESTRA PÁGINA-->
+        <meta name="description"
+            content="Oasis Protocol es un projecto en la que nació ha finales de 2020 con la finalidad de tener un ecosistema de Farming y Stacking gracias a su desarrollo de ROSE Garden">
+        <!-- EN ESTE CASO ESTAMOS AGREGANDO UNA META PARA EL ICONO DE SUBIDA QUE LO VAMOS A IMPLEMENTAR CON JS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--EN ESTA LÍNEA DE CÓDIGO ESTAMOS AÑADIENDO PALABRAS QUE DESTAQUEN  PARA QUE EL SEO DE GOOGLE PUDEDA  RECOMENDAR A MÁS GENTE NUESTRA PÁGINA -->
+        <meta name="keywords" content="Rose, CoinMarketCup, CoinGecko, Meta, YuzuSwap, Trading View">
+    </head>
+    <!-- DESDE AQUÍ EMPEZAMOS HA REALIZAR EL BODY -->
+    <body>
+        <!-- AHORA EMPEZAMOS LA SECCIÓN DEL HEADER -->
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="logo nav-link"><img src="/img/logo_rose.svg"></a>
+                <!-- !AGREGAMOS  UN ARIAL LABEL CON NOMBRE "ABRIR MENÚ" PARA SOLUCIONAR EL PROBLEMA DE COMPARIBILIDAD EN EL MÓVIL ESTO ESTA MÁS EXPLICADO EN JS-->
+                <button class="nav-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a href="index.html" class="nav-menu-link nav-link">HOME</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="comunidad.html" class="nav-menu-link nav-link">COMUNIDAD</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="fundacion.html" class="nav-menu-link nav-link">FUNDACIÓN</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="registro.html" class="nav-menu-link nav-link">REGISTRO</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- APARTIR DE AQUÍ REALIZAMOS UN "FLEX-CONTAINER-3" DONDE SE ENCONTRARÁ EL NAVEGADOR COMO LA LUNA DEL "NIGHT MODE"-->
+        <div class="flex-container3">
+            <div>
+                <label><i class="fas fa-search fa-color"></i></label>
+                <label><input type="text" id="color" size="65" maxlength="30" placeholder="Sitio de búsqueda ..."
+                        autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false"
+                        aria-label="entrada de búsqueda" aria-owns="algolia-autocomplete-listbox-0" dir="auto"
+                        style="position: relative; vertical-align: top;" name="nombre"></label>
+            </div>
+            <!-- EN ESTE CASO ESTAREMOS ESTABLECIENDO UN BOTÓN QUE ES LA "LUNA" PARA PODER ASOCIARLO CON JS-->
+            <div>
+                <button onclick="myFunction()"><i class="far fa-moon"></i></button>
+            </div>
+        </div>
+        <!-- DESDE AQUÍ PONEMOS UNA IMAGEN PRINCIPAL EN LA PORTADA DE LA PÁGINA WEB -->
+        <div id="portada_principal">
+            <img src="img/portada_principal.svg">
+        </div>
+        <!-- EN ESTA SECCIÓN NOSOTROS ESTÁREMOS ESCRIBIENDO LA SECCIÓN DEL APARTADO QUE NOS ENCONTRAMOS EN LA PÁGINA-->
+        <div id="nombre_abajo_de_imagen">
+            <h4> OASIS PROTOCOL | ROSE</h4>
+        </div>
+        <!--AHORA ESTAMOS MOSTRANDO AL CLIENTE LA "TAPA DEL MERCADO" QUE TIENE EL PROYECTO OASIS -->
+        <div id="valor_del_mercado">
+            <p>TAPA DEL MERCADO $ 1,993,227,661</p>
+        </div>
+        <!-- AQUÍ ESTAMOS RTEALIZANDO EL PROYECTO DE OASIS EN EL QUE TAMBIÉN LE HEMOS AGREGANDO UNA PEQUEÑA DECORACIÓN-->
+        <div class="texto">
+            <img src="/img/home-purple.svg" id="ala_morada">
+            <div class="presentación">
+                <h1>¿Qué es Oasis Protocol?</h1>
+                <img src="img/rose_cabecera.png">
+                <p>"Oasis Network (ROSE) es una cadena de bloques de capa 1 centrada en la privacidad</p>
+                <p>creada para las finanzas abiertas y una economía de datos responsable utilizando</p>
+                <p>Cosmos SDK. Eso permitirá a Oasis interactuar con el ecosistema de la cadena de</p>
+                <p>bloques habilitada para Cosmos (ATOM) cuando se lance su Protocolo de </p>
+                <p>comunicación entre cadenas de bloques."</p>
+                <br>
+            </div>
+            <img src="/img/home-green.svg" id="ala_verde">
+        </div>
+        </div>
+        <!-- EN ESTE APARTADO DE LA PÁGINA ESTAREMOS AGREGANDO UNAS PEQUEÑAS APLICACIONES QUE TIENE ESTE "EXCHANGE" -->
+        <div class="titulo_del_medio">
+            <h2>Tecnología</h2>
+        </div>
+        <div class="grid-container">
+            <div>
+                <img src="/img/cubo.svg">
+                <h3>Escalable, Confiable y Versátil</h3>
+                <p>Oasis Network separa el consenso y la ejecución en dos capas, la capa de consenso y la capa ParaTime,
+                    para una
+                    mejor escalabilidad y una mayor versatilidad.</p>
+            </div>
+            <div>
+                <img src="/img/capas.svg">
+                <h3>Cargas de trabajo paralelas</h3>
+                <p>La separación del consenso y la ejecución permite que múltiples ParaTimes procesen transacciones en
+                    paralelo,
+                    lo que significa que las cargas de trabajo complejas procesadas en un ParaTime.</p>
+            </div>
+            <div>
+                <img src="/img/confidencialidad.svg">
+                <h3>Contratos confidenciales</h3>
+                <p>
+                    La primera red que admite contratos inteligentes confidenciales. Oasis Eth/WASI Runtime es un ejemplo de
+                    código
+                    abierto de ParaTime confidencial que utiliza enclaves seguros para mantener la privacidad de los datos
+                    mientras
+                    se procesan.
+                </p>
+            </div>
+            <div>
+                <img src="/img/diseño.svg">
+                <h3>Efficient Design</h3>
+                <p>The network’s unique system of discrepancy detection makes Oasis more efficient than sharding and
+                    parachains —
+                    requiring a smaller replication factor for the same level of security.</p>
+            </div>
+            <div>
+                <img src="/img/smart contracts.svg">
+                <h3>Capas paralelas de contratos </h3>
+                <p>
+                    La arquitectura de escalado de Oasis ParaTime admite transacciones de alta velocidad, alta escalabilidad
+                    y
+                    grandes cargas de trabajo al separar la ejecución del consenso.
+                </p>
+            </div>
+            <div>
+                <img src="/img/base de datossvg.svg">
+                <h3>Tokenización de datos</h3>
+                <p>
+                    La combinación única de computación confidencial y blockchain de Oasis Network permite un nuevo
+                    paradigma
+                    llamado datos tokenizados.
+                </p>
+            </div>
+        </div>
+        <!-- ACONTINUACIÓN ESTAREMOS AGREGANDO UN TÍTULO SOBRE LOS "PARTNERS"-->
+        <div class="titulo_del_final">
+            <h2>Partners</h2>
+        </div>
+        <div class="colaboraciones">
+            <div class="subtitulos">
+                <h2>Operadores de Nodos</h2>
+            </div>
+            <div class="colaboraciones1">
+                <div class="flex-container2">
+                    <div>
+                        <img src="img/colaborador1.png">
+                    </div>
+                    <div>
+                        <img src="img/colaborador2.png">
+                    </div>
+                    <div>
+                        <img src="img/pruba2.png">
+                    </div>
+                    <div>
+                        <img src="img/prueba3.png">
+                    </div>
+                </div>
+            </div>
+            <!-- EN ESTE APARTADO REALIZAMOS UNOS PEQUEÑOS TÍTULOS PARA MOSTRAR A QUE RAMA SE ENCUENTRA EL DESARROLLO -->
+            <div class="subtitulos">
+                <h2>Developers</h2>
+            </div>
+            <div class="colaboraciones1">
+                <!-- POSTERIORMENTE NOSOTROS HEMOS REALIZADO UN "FLEX-CONTAINER" DE LOS COLABORADORES DE LA "BLOCKCHAIN" -->
+                <div class="flex-container2">
+                    <div>
+                        <img src="img/prueba6.png">
+                    </div>
+                    <div>
+                        <img src="img/colaborador6.png">
+                    </div>
+                    <div>
+                        <img src="img/ultima.png">
+                    </div>
+                    <div>
+                        <img src="img/colaborador8.png">
+                    </div>
+                </div>
+            </div>
+            <div class="acords">
+                <h2>Ayuda</h2>
+            </div>
+            <button class="acordeon">¿Por qué elegir Oasis Foundation ?</button>
+            <div class="panel">
+                <p>Cada compilación de DApp en Ethereum debe usar el mismo tiempo de ejecución, aunque no es el más ideal
+                    para su caso de uso. Un tiempo de ejecución es el entorno en el que se basa una aplicación. Por ejemplo,
+                    el entorno de ejecución ideal para una DAO (organización autónoma descentralizada) es bastante diferente
+                    al de una aplicación DeFi. En pocas palabras, no todos los entornos son ideales para todos los casos de
+                    uso.</p>
+                <br>
+                <p>Tanto la capa de consenso como la capa ParaTime se pueden actualizar fácilmente sin necesidad de un
+                    tenedor duro.</p>
+            </div>
+            <button class="acordeon">La Fundación Génesis de Oasis</button>
+            <div class="panel">
+                <p>La comunidad de Oasis ha crecido notablemente rápido desde sus inicios en 2018 y para poder hacer
+                    realidad su visión de construir una economía de datos responsable, es fundamental que la red mantenga
+                    sus raíces y diseño descentralizados. </p>
+                <br>
+                <p>Un número cada vez mayor de participantes se está uniendo al ecosistema de Oasis y brindando
+                    investigación y desarrollo continuos. Al dar el poder a los miembros de la comunidad Oasis, estamos
+                    descentralizando aún más la Red Oasis en todos los sentidos de la palabra. </p>
+            </div>
+            <!-- APARTIR DE ESTE PUNTO NOSOTROS VAMOS A RELIZAR EL BOTÓN EN EL QUE NOS VA HA AYUDA A  VOLVER A NAVEGAR ARRIBA -->
+            <button id="subir">
+                <!-- ESTA CLASE ES EL ICONO DE GOOGLE "EL LINK HREF SE ENCUENTRA EN EL HEADER" -->
+                <i class="material-icons">arrow_upward</i>
+            </button>
+            <!-- DESDE ESTE APARTADO COMENZAREMOS A REALIAR EL FOOTER -->
+            <footer class="footer">
+                <div class="grupo_1">
+                    <div class="box">
+                        <figure>
+                            <a href="index.html">
+                                <img src="img/logo_rose_gris.svg">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="box">
+                        <h2>SOBRE NOSOTROS</h2>
+                        <p>Projecto de Blockchain con gran visión al futuuro.</p>
+                        <p>Con colaborades potentes como Meta y un Suministro circulante de 3.98B de Roses </p>
+                    </div>
+                    <div class="box">
+                        <h2>SIGUENOS</h2>
+                        <div class="red-social">
+                            <a href="https://www.facebook.com/oasisprotocol/" class="fa fa-facebook"></a>
+                            <a href="https://www.instagram.com/oasisnetwork/?hl=es" class="fa fa-instagram"></a>
+                            <a href="https://twitter.com/oasisprotocol?lang=en" class="fa fa-twitter"></a>
+                            <a href="https://www.youtube.com/channel/UC35UFPcZ2F1wjPxhPrSsESQ" class="fa fa-youtube"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grupo_2">
+                    <small>&copy; 2022- Todos los Derechos Reservados.</small>
+                </div>
+            </footer>
+    </body>
+    <!--EN ESTE CASO ESTÁMOS HACIENDO UNA CONEXIÓN CON JAVA SCRIPT-->
+    <script src="index.js"></script>
+</html>

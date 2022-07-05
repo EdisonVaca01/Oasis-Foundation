@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <!--EN ESTE APARTADO SE ENCONTRARÁ TODO SOBRE LOS METAS,LNKS,TITLE Y LOGO DE LA MARCA-->
+        <meta charset="utf-8">
+        <title>Oasis Protocol</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="comunidad.css">
+        <!--EN ESTA LÍNEA DE CÓDIGO ADJUNTAMOS EL LINK DE FONTAWESOME PARA LOS ICONOS DE LAS SIGUIENTES PÁGINAS-->
+        <script src="https://kit.fontawesome.com/568f2cee93.js" crossorigin="anonymous"></script>
+        <!--EN ESTA LÍNEA DE CÓDIGO ESTAMOS INSERTANDO UNA IMAGEN (PUEDE SER ICONO) EN LA PESTAÑA DEL NAVEGADOR-->
+        <link rel="icon" type="image/png" href="/img/rose_cabecera.png" />
+        <!--EN ESTA LÍNEA DE CÓDIGO ESTAMOS AGREGANDO EL AUTOR DE LA PÁGINA WEB-->
+        <meta name="author" content="Edison Gabriel Vaca Cifuentes">
+        <!--EN ESTA LÍNEA DE CÓDIGO ESTAMOS CREANDO UNA DESCRIPCIÓN  DE NUESTRA PÁGINA DONDE LOS CLIENTES PUEDAN LEER Y SABER DE  QUE TRATA NUESTRA PÁGINA-->
+        <meta name="description"
+            content="Oasis Protocol es un projecto en la que nació ha finales de 2020 con la finalidad de tener un ecosistema de Farming y Stacking gracias a su desarrollo de ROSE Garden">
+        <!--EN ESTA LÍNEA DE CÓDIGO ESTAMOS AÑADIENDO PALABRAS QUE DESTAQUEN  PARA QUE EL SEO DE GOOGLE PUDEDA  RECOMENDAR A MÁS GENTE NUESTRA PÁGINA -->
+        <meta name="keywords" content="Rose, CoinMarketCup, CoinGecko, Meta, YuzuSwap, Trading View">
+        <!-- EN ESTE CASO ESTAMOS AGREGANDO UNA META PARA EL ICONO DE SUBIDA QUE LO VAMOS A IMPLEMENTAR CON JS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <!-- AHORA EMPEZAMOS LA SECCIÓN DEL HEADER -->
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="logo nav-link"><img src="/img/logo_rose.svg"></a>
+                <!-- !AGREGAMOS  UN ARIAL LABEL CON NOMBRE "ABRIR MENÚ" PARA SOLUCIONAR EL PROBLEMA DE COMPARIBILIDAD EN EL MÓVIL ESTO ESTA MÁS EXPLICADO EN JS-->
+                <button class="nav-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a href="index.html" class="nav-menu-link nav-link">HOME</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="comunidad.html" class="nav-menu-link nav-link">COMUNIDAD</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="fundacion.html" class="nav-menu-link nav-link">FUNDACIÓN</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="registro.html" class="nav-menu-link nav-link">REGISTRO</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- APARTIR DE AQUÍ REALIZAMOS UN "FLEX-CONTAINER-3" DONDE SE ENCONTRARÁ EL NAVEGADOR COMO LA LUNA DEL "NIGHT MODE"-->
+        <div class="flex-container3">
+            <div>
+                <label><i class="fas fa-search fa-color"></i></label>
+                <label><input type="text" id="color" size="65" maxlength="30" placeholder="Sitio de búsqueda ..."
+                        autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false"
+                        aria-label="entrada de búsqueda" aria-owns="algolia-autocomplete-listbox-0" dir="auto"
+                        style="position: relative; vertical-align: top;" name="nombre"></label>
+            </div>
+            <!-- EN ESTE CASO ESTAREMOS ESTABLECIENDO UN BOTÓN QUE ES LA "LUNA" PARA PODER ASOCIARLO CON JS-->
+            <div>
+                <button onclick="myFunction()"><i class="far fa-moon"></i></button>
+            </div>
+        </div>
+        <!-- DESDE AQUÍ PONEMOS UNA IMAGEN PRINCIPAL EN LA PORTADA DE LA PÁGINA WEB -->
+        <div id="portada_principal">
+            <img src="img/fondo.svg" width="100%">
+        </div>
+        <!-- EN ESTA SECCIÓN NOSOTROS ESTÁREMOS ESCRIBIENDO LA SECCIÓN DEL APARTADO QUE NOS ENCONTRAMOS EN LA PÁGINA-->
+        <div id="nombre_abajo_de_imagen">
+            <p> COMUNIDAD | ROSE</p>
+        </div>
+        <!--EN ESTE CASOS  ESTAMOS DANDO NOMBRE AL APARTADO QUE SE VA A REALIZAR-->
+        <div id="nombre_abajo_de_imagen">
+            <!-- AHORA EMPEZAMOS A REALZAR EL FLEX-CONTAINER CON EL CONTENIDO  DE LA COMUNIDAD-->
+            <h1>Desde nuestro Proyecto tenemos Comunidades Multiplataformas</h1>
+            <div class="flex-container">
+                <div>
+                    <p>
+                        Desde España tenemos nuestra comunidad "Oasis Network - Comunidad española". En la que cuenta con
+                        más de
+                        12.000 seguidores.Donde comparten todas las nuevas noticias como por ejemplo todas las empresas que
+                        trabajan para Oasis e incluso entrevistas edxclusivas de los fundadores como de los desarrolladores.
+                    </p>
+                    <p>
+                        Esto es un gran ejemplo de las diferentes comunidades que existen alrededor del mundo para poder asi
+                        que
+                        existe el "fomo" a las diferentes personas del mundo
+                    </p>
+                </div>
+                <div id="twitter">
+                    <blockquote class="twitter-tweet">
+                        <p lang="es" dir="ltr">Cada vez somos más 😍. El proyecto de <a
+                                href="https://twitter.com/OasisProtocol?ref_src=twsrc%5Etfw">@OasisProtocol</a> sigue
+                            expandiendo sus asociaciones con empresas de diferentes sectores. <a
+                                href="https://t.co/WA44TSZHjX">pic.twitter.com/WA44TSZHjX</a></p>&mdash; Oasis Network -
+                        Comunidad española (@OasisNetwork_Es) <a
+                            href="https://twitter.com/OasisNetwork_Es/status/1476263903831154692?ref_src=twsrc%5Etfw">December
+                            29, 2021</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div>
+                    <p>
+                        LAUNCHING THE INAUGURAL 2022 OASIS CONTENT GAMES
+                    </p>
+                    <p>
+                        Este año han realizado una competición de Bellas Artes, como de Memes, como Firmación, como incluso
+                        de
+                        Competición de Equipos con una gran cantidad de Roses.
+                    </p>
+                </div>
+                <div>
+                    <img src="/img/premios.png">
+                </div>
+            </div>
+        </div>
+        <!-- AHORA ESTAMOS REALIZANFO UN APARTADO DONDE LO DESTINAREMOS A TODAS NUESTRAS REDES SOCIALES PARA QUE NOS PUEDAN SEGUIR -->
+        <div id="comunidad">
+            <div class="separacion">Pertenece a Nuestros Canales de Comunidad</div>
+            <p>
+                Para poder saber de todas nuevas noticias, futuros proyectos, eventos, programas puede seguirnos en nuestras
+                Redes Sociales:
+            </p>
+            <div class="grid-container">
+                <div>
+                    <a href="https://t.me/oasisprotocolcommunity">
+                        <h3>Telegram</h3>
+                    </a>
+                    <img src="/img/telegram.png">
+                </div>
+                <div>
+                    <a href="https://twitter.com/OasisProtocol">
+                        <h3>Twitter</h3>
+                    </a>
+                    <img src="/img/twitter.png">
+                </div>
+                <div>
+                    <a href="https://discord.com/invite/RwNTK8t">
+                        <h3>Discord</h3>
+                    </a>
+                    <img src="/img/discord.png">
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/channel/UC35UFPcZ2F1wjPxhPrSsESQ">
+                        <h3>YouTube</h3>
+                    </a>
+                    <img src="/img/youtube.png">
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/company/oasisprotocol/">
+                        <h3>Linkedin</h3>
+                    </a>
+                    <img src="/img/Linkedin.png">
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/oasisnetwork/">
+                        <h3>Instagram</h3>
+                    </a>
+                    <img src="/img/Insta.png">
+                </div>
+            </div>
+        </div>
+        <!-- DESDE ESTE APARTADO COMENZAREMOS A REALIAR EL FOOTER -->
+        <footer class="footer">
+            <div class="grupo_1">
+                <div class="box">
+                    <figure>
+                        <a href="index.html">
+                            <img src="img/logo_rose_gris.svg">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Projecto de Blockchain con gran visión al futuuro.</p>
+                    <p>Con colaborades potentes como Meta y un Suministro circulante de 3.98B de Roses </p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/oasisprotocol/" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/oasisnetwork/?hl=es" class="fa fa-instagram"></a>
+                        <a href="https://twitter.com/oasisprotocol?lang=en" class="fa fa-twitter"></a>
+                        <a href="https://www.youtube.com/channel/UC35UFPcZ2F1wjPxhPrSsESQ" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo_2">
+                <small>&copy; 2022- Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+        <!-- APARTIR DE ESTE PUNTO NOSOTROS VAMOS A RELIZAR EL BOTÓN EN EL QUE NOS VA HA AYUDA A  VOLVER A NAVEGAR ARRIBA -->
+        <button id="subir">
+            <!-- ESTA CLASE ES EL ICONO DE GOOGLE "EL LINK HREF SE ENCUENTRA EN EL HEADER" -->
+            <i class="material-icons">arrow_upward</i>
+        </button>
+    </body>
+    <script src="comunidad.js"></script>
+    </body>
+</html>

@@ -1,0 +1,454 @@
+/*EN ESTE CASO NOSOTROS ESTAMOS PONIENDO ESTE ENLACE DE GOOGLE PARA LA FUENTE DE NUESTRA PÁGINA*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/*AHORA ESTAMOS REALIZANDO LA CONFIGURACIÓN DE LOS BORDES DE LA PÁGINA WEB COMO LA FUENTE DE LETRA LOS MÁRGENES, EL ESPACIO*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* EN ESTE CASO NOSOTROS ESTÁMOS ESTABLECIENDO UNAS REGLAS  DE COLORES AL BODY PARA POSTERIORMENTE EL JS */
+body {
+  background-color: white;
+  color: black;
+}
+/* ESTA REGLA QUE ESTAMOS CREANDO NOS SIRVE PARA  */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+/* NOSOTROS AHORA ESTAMOS REALIZANDO  LA CONFIGURACIÓN DEL HEADER PARA LA COMPATIBILIDAD DE LA PÁGINA WEB*/
+.header {
+  background-color: #0769e9;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat", sans-serif;
+  z-index: 3;
+}
+/* AHORA NOSOTROS ESTAMOS ESTABLECIENDO  QUE SE ENCUENTRE LAS PALABRAS AL LADO DE OTRA JUNTO A OTRA PALBRA*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 992px;
+}
+/* AHORA ESTABLECEMOS EL COLOR DE LAS LETRAS COMO SI VA A EXISTIR LA DECORACIÓN*/
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+/* POSTERIORMENTE ESTAREMOS EDITANDO LA POSICIÓN COMO  DE LA FUENTE (EN ESTE CASO ES UNA IMÁGEN PERO PARA QUE SE ENCUENRTE DE FORMA DE ALÍNEADO CON LAS DEMÁS PALABRAS HE TENIDO QUE HACER UN "FONT-SIZE")*/
+.logo {
+  font-size: 30px;
+  padding: 0 40px;
+  line-height: 80px;
+}
+/*AHORA ESTAMOS ESTABLECIENDO LAS "REFERENCIAS ENTRES LAS PALABRAS" EN ESTE CASO SERÍA EL "PADRE"*/
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+/*AHORA ESTAMOS ESTABLECIENDO LAS "REFERENCIAS ENTRES LAS PALABRAS" EN ESTE CASO SERÍA EL "HIJO"*/
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+/* AHORA ESTAMOS ESTABLECINDO LA ALTURA QUE SE VAN HA ENCONTRAR LAS REFERENCIAS*/
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+/* EN ESTE CASO ESTAMOS REALIZANDO UNA DECORACIÓN  EN EL QUE EL MOUSE SE ENCUENTRE ENCIMA DE LAS PALABRAS "REFERENCIAS"*/
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: #0957bd;
+  transition: 0.5s;
+}
+/* AHORA ESTAMOS ESTABLECIENDO LAS REGLAS, COMO EL POSICIONAMIENTO, EL COLOR DEL "MENÚ HAMBURGUESA" */
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+/*RESPOSIVE DEL HEADER*/
+@media (max-width: 800px) {
+  body {
+    padding-top: 70px;
+  }
+  .header {
+    height: 60px;
+  }
+  .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #075db3;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav-menu-item {
+    line-height: 70px;
+  }
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #83c5f7;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-menu_visible {
+    left: 0;
+  }
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+/* EN ESTE CASO ESTAMOS ESTABLECIENDO COLOR Y LA COLOCACIÓN DE LA LUPA*/
+.fa-color {
+  color: #0888f4;
+  padding: 15px 10px;
+}
+/* EN ESTE CASO ESTAMOS AGREGANDO  LA MODIFICACIÓN DEL "ESPACIO" DE LA BÚSQUEDA*/
+#color {
+  background-color: #ffff;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  vertical-align: top;
+  font-size: 15px;
+  padding-left: 10px;
+  z-index: -1;
+}
+/* AHORA ESTAMOS ESTABLECIENDO DECORACIÓN AL BOTÓN DE "NIGHT-MODE"*/
+button {
+  padding: 10px 25px;
+  background-color: #0888f4;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0, 3s ease 0s;
+}
+/*AHORA REALIZAREMOS LA CONFIGURACIÓN  DE LOS "BENEFICIOS DEL GRUPO" PARA LA COMPATIBILIDAD*/
+.flex-container3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+/*AHORA ESTAMOS REALIZANDO LA CONFIGURACIÓN DE TODOS LOS <DIV> QUE SE ENCUENTRAN EN EL "FLEX-CONTAINER2" */
+.flex-container3 > div {
+  color: #0987f4;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 800px) {
+  .flex-container3 {
+    display: none;
+  }
+}
+/*AHORA MISMO NOSOTROS ESTAMOS AGREGANDO MODIFICACIONES DE LA IMÁGEN DE LA PORTADA*/
+#portada_principal {
+  padding-top: 1px;
+  margin-left: auto;
+  width: 150vh;
+  margin-right: auto;
+  margin-bottom: 24px;
+  max-width: 100%;
+  justify-content: center;
+}
+/*EN ESTE CASO  ESTAMOS AGREGANDO A LAS PALABRAS  "OASIS PROTOCOL | ROSE" CON TAMAÑO DE LETRA, EL COLOR, EL LUGAR QUE SE ENCUENTRA ETC.*/
+#nombre_abajo_de_imagen {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 10vh;
+}
+/*PROCEDEREMOS A REALIZAR LOS ATRIBUTOS DE LOS <H1>*/
+h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+/*AHORA REALIZAREMOS LA CONFIGURACIÓN  DEL "TEAM" PARA LA COMPATIBILIDAD*/
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+/*AHORA ESTAMOS AGREGANDO LAS MODIFICACIONES A LAS <P> COMO LA FUENTE, EL TAMAÑO ETC.*/
+.flex-container p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 80px;
+  color: #0987f4;
+}
+
+/*AHORA ESTAMOS REALIZANDO LA CONFIGURACIÓN DE TODOS LOS <DIV> QUE SE ENCUENTRAN EN EL "FLEX-CONTAINER" */
+.flex-container > div {
+  width: 100%;
+  margin: 60px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  color: #0987f4;
+}
+/*AHORA VAMOS HA REALIZAR LA CONFIGURACIÓN DE LA IMAGEN DEL "FLEX-CONTAINER" */
+.flex-container img {
+  width: 50%;
+  padding-top: 160px;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-right: 200px;
+    padding-top: 5px;
+  }
+}
+.flex-container #twitter {
+  padding-left: 130px;
+}
+@media (max-width: 800px) {
+  .flex-container #twitter {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-right: 100px;
+  }
+}
+/* EN ESTE CASO NOSOTROS ESTAMOS REALIZANDO LAS CARACTERÍSTICAS DE */
+h1 {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+/*APARTIT DE AQUÍ NOSOTROS VAMOS A EMPEZAR  HA REALIZAR  EL SLIDE DE LAS IMÁGENES DONDE PRIMERO DAREMOS LAS CARACTERÍSTICA DEL "PADRE"*/
+.carousel {
+  width: 80vw;
+  height: 80vh;
+  position: relative;
+  margin: 0 200px;
+  z-index: 1;
+}
+/* EN ESTE CASO ESTÁMOS ENGLOBANDO LOS <UL> PARA LOS <IL> */
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* AHORA NOSOTROS ESTAREMOS SELECCIONANDO POR SECCIONES LAS IMÁGENES QUE VAN A IR ROTANDO */
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+/* ESTAMOS GENERANDO LAS CARACTERÍSTICAS NECESARIAS PARA LA COMPATIBLILDAD DE LAS IMG */
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* EN ESTE CASO ESTAMOS REALIZANDO LA "TRANCISIÓN", COMO LA "OPACIDAD" IMPORTANTE! -> ESTO NOS AYUDARÁ EN  JS */
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+/* AHORA ESTAMOS REALIZANDO LAS CARACTERÍSTICAS DE LOS BOTONES  QUE SE VAN HA ENCONTRAR EN LAS IMAGENES PARA EL "SLIDE" */
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+}
+/* AHORA EN ESTE CASO ESTÁREMOS REALIZANDO ALGUNAS CARACTERÍSTICAS PARA EL "FONDO" DE LA PÁGINA  */
+.carousel-button:hover,
+.carousel-button:focus {
+  color: #0987f4;
+}
+/* ESTAMOS AREGANDO LA DISTRIBUCIÓN DE LA FLECHA DE LA IZQUIERDA */
+.carousel-button.prev {
+  left: 1rem;
+}
+/* ESTAMOS AREGANDO LA DISTRIBUCIÓN DE LA FLECHA DE LA DERECHA */
+
+.carousel-button.next {
+  right: 1rem;
+}
+
+@media (max-width: 800px) {
+  .carousel {
+    width: 90vw;
+    height: 50vh;
+    position: relative;
+    margin: 0 40px;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1500px) {
+  .carousel {
+    width: 90vw;
+    height: 50vh;
+    position: relative;
+    margin: 0 50px;
+    z-index: 1;
+  }
+}
+/*POSTERIORMENTE ESTAREMOS REALIZANDO LA CONFIGURACIÓN DE LA ETIQUETA <P> PARA LA EXPLICACIÓN DE LA MONEDA*/
+.nacimiento_desarrollo p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #0987f4;
+  font-weight: bolder;
+}
+
+/*AHORA NOSOTROS EESTAMOS ESTABLECINDO LA CONFIGURACIÓN EN LA GRÁFICA PARA QUE SE MUESTRA DE FORMA CORRECTA*/
+.grafica {
+  justify-content: center;
+  padding-left: 500px;
+  padding-top: 20px;
+  width: 80%;
+}
+@media (max-width: 1891px) {
+  .grafica {
+    display: none;
+  }
+}
+#subir {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 5px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #0888f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  margin: 0 10;
+  padding-right: 50px;
+  z-index: 2;
+}
+/*A PARTIR DE AQUÍ ESTABLECEREMOS ATRIBUTOS EN GENERAL HA TODO EL FOOTER*/
+.footer {
+  width: 100%;
+  background-color: #eaf0f4;
+}
+/* ESTABLECEMOS CARACTERÍSTICAS BÁSICAS DE LA SECCIÓN  PRINCIPAL DEL FOOTER*/
+.footer .grupo_1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+/*ESTAMOS ESTABLECIENDO CARACTERÍSTICAS DONDE SE ENCONTRARÁ EL LOGO DE OASIS */
+.footer .grupo_1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*ESTABLECEMOS EL TAMAÑO DE LA IMAGEN DEL LOGO */
+.footer .grupo_1 .box figure img {
+  width: 250px;
+}
+/*ESTAMOS ESTABLECINDO CARACTERÍSTICAS DEL <H2> DEL FOOTER */
+.footer .grupo_1 .box h2 {
+  color: #98a3b6;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+/*ESTAMOS ESTABLECINDO CARACTERÍSTICAS DEL <P> DEL FOOTER */
+.footer .grupo_1 .box p {
+  color: #98a3b6;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+/*ESTAMOS ESTABLECINDO CARACTERÍSTICAS DE LOS ENLACES*/
+.footer .grupo_1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  text-align: center;
+  transition: all 300ms ease;
+}
+/*ESTABLECEMOS EL COLOR DE LOS ICONOS DE LAS REDES SOCILES*/
+.footer .grupo_1 .red-social .fa {
+  color: #98a3b6;
+}
+/*ESTABLECEREMOS UNA PEQUEÑA ANIMACIÓN QUE EL MOUSE SE ENCUENTRE ENCIMA DEL EMOTICONO SE ENCUENTRE DE COLOE "AZUL" EL EMOTICONO*/
+.footer .grupo_1 .red-social a:hover {
+  color: #2596be;
+}
+/*ESTABLECEMOS EL FONDO DE COLOR DEL GRUPO2 DEL FOOTER "LA PARTE SECUNDARIA"*/
+.footer .grupo_2 {
+  background-color: #2596be;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+/*ESTABLECEMOS CARACTERÍSTICAS DE LAS PALABRAS CON LA EIQUETA EN ESTE CASO EL TAMAÑO */
+.footer .grupo_2 small {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+/*APARTIR DE AQUÍ HEMOS REALIZADO EL @RESPONSIVE DEL FOOTER */
+@media screen and (max-width: 800px) {
+  .footer .grupo_1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
